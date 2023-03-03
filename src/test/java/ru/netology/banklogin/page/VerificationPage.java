@@ -24,7 +24,7 @@ public class VerificationPage {
         return Selenide.page(DashboardPage.class);
     }
 
-    private void verify(String verificationcode) {
+    public void verify(String verificationcode) {
         codeField.setValue(verificationcode);
         verifyButton.click();
     }
